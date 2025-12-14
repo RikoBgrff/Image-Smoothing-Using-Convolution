@@ -18,8 +18,10 @@ from history import HistoryItem, append_history, load_history, now_iso
 
 
 APP_TITLE = "GROUP 7 - Image Smoothing Using Convolution"
-GALLERY_DIR = "gallery"
-RESULTS_DIR = "results"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+GALLERY_DIR = os.path.join(BASE_DIR, "gallery")
+RESULTS_DIR = os.path.join(BASE_DIR, "results")
 
 os.makedirs(GALLERY_DIR, exist_ok=True)
 os.makedirs(RESULTS_DIR, exist_ok=True)
