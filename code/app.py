@@ -101,7 +101,7 @@ uploaded = None
 
 if source_mode == "Select from gallery":
     if not gallery_files:
-        st.sidebar.warning("No images found in code/assets/. Add at least one image (e.g., realPhoto.jpg).")
+        st.sidebar.warning("No images found in code/results/. Add at least one image (e.g., realPhoto.jpg).")
     selected_gallery = st.sidebar.selectbox("Gallery images (code/gallery/)", gallery_files if gallery_files else ["(none)"])
 else:
     uploaded = st.sidebar.file_uploader("Upload an image", type=["jpg", "jpeg", "png", "bmp", "webp"])
@@ -183,7 +183,7 @@ with tab1:
             seed=42,
         )
 
-        # Save outputs into assets/ with run timestamp prefix for uniqueness
+        # Save outputs into results/ with run timestamp prefix for uniqueness
         stamp = now_iso().replace(":", "-")
         out_resized = os.path.join(RESULTS_DIR, f"{stamp}_resized_500x500.jpg")
         out_gray    = os.path.join(RESULTS_DIR, f"{stamp}_grayscale.jpg")

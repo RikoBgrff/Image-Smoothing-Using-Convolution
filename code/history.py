@@ -32,8 +32,8 @@ def history_path(results_dir: str) -> str:
     return os.path.join(results_dir, "history.json")
 
 
-def load_history(assets_dir: str) -> List[HistoryItem]:
-    path = history_path(assets_dir)
+def load_history(results_dir: str) -> List[HistoryItem]:
+    path = history_path(results_dir)
     if not os.path.exists(path):
         return []
     with open(path, "r", encoding="utf-8") as f:
@@ -41,10 +41,10 @@ def load_history(assets_dir: str) -> List[HistoryItem]:
     return [HistoryItem(**item) for item in data]
 
 
-def append_history(assets_dir: str, item: HistoryItem) -> None:
-    items = load_history(assets_dir)
+def append_history(results_dir: str, item: HistoryItem) -> None:
+    items = load_history(results_dir)
     items.insert(0, item)  # newest first
-    path = history_path(assets_dir)
+    path = history_path(results_dir)
     with open(path, "w", encoding="utf-8") as f:
         json.dump([asdict(x) for x in items], f, ensure_ascii=False, indent=2)
 
