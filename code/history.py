@@ -34,19 +34,34 @@ def history_path(results_dir: str) -> str:
 
 def load_history(results_dir: str) -> List[HistoryItem]:
     path = history_path(results_dir)
+
     if not os.path.exists(path):
         return []
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read().strip()
+            if not content:
+                return []  # empty file
+            data = json.loads(content)
+    except (json.JSONDecodeError, OSError):
+        # corrupted or partially written file
+        return []
+
     return [HistoryItem(**item) for item in data]
 
 
 def append_history(results_dir: str, item: HistoryItem) -> None:
     items = load_history(results_dir)
-    items.insert(0, item)  # newest first
+    items.insert(0, item)
+
     path = history_path(results_dir)
-    with open(path, "w", encoding="utf-8") as f:
+    tmp_path = path + ".tmp"
+
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump([asdict(x) for x in items], f, ensure_ascii=False, indent=2)
+
+    os.replace(tmp_path, path)  # atomic replace
 
 
 def now_iso() -> str:
