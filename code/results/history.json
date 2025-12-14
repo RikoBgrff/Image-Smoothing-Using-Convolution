@@ -1,0 +1,317 @@
+[
+  {
+    "timestamp_iso": "2025-12-15T01-06-40",
+    "source_type": "gallery",
+    "source_name": "Car.jpg",
+    "kernel_size": 3,
+    "gaussian_sigma": 1.0,
+    "noise_mode": "none",
+    "noise_gaussian_sigma": 15.0,
+    "salt_pepper_prob": 0.02,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-15T01-06-40_resized_500x500.jpg",
+      "grayscale": "2025-12-15T01-06-40_grayscale.jpg",
+      "noisy": "2025-12-15T01-06-40_noisy.jpg",
+      "box": "2025-12-15T01-06-40_box_filtered.jpg",
+      "gaussian": "2025-12-15T01-06-40_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 0.0,
+        "PSNR": Infinity,
+        "SSIM": 1.0
+      },
+      "box_vs_clean": {
+        "MSE": 192.84422113580248,
+        "PSNR": 25.278737317515958,
+        "SSIM": 0.9802905541385296
+      },
+      "gaussian_vs_clean": {
+        "MSE": 141.38724456792164,
+        "PSNR": 26.626701300749225,
+        "SSIM": 0.985587953780423
+      }
+    }
+  },
+  {
+    "timestamp_iso": "2025-12-15T01-03-19",
+    "source_type": "gallery",
+    "source_name": "Car.jpg",
+    "kernel_size": 3,
+    "gaussian_sigma": 1.0,
+    "noise_mode": "gaussian",
+    "noise_gaussian_sigma": 22.0,
+    "salt_pepper_prob": 0.07,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-15T01-03-19_resized_500x500.jpg",
+      "grayscale": "2025-12-15T01-03-19_grayscale.jpg",
+      "noisy": "2025-12-15T01-03-19_noisy.jpg",
+      "box": "2025-12-15T01-03-19_box_filtered.jpg",
+      "gaussian": "2025-12-15T01-03-19_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 456.0758073308512,
+        "PSNR": 21.540433252886153,
+        "SSIM": 0.9562467820939763
+      },
+      "box_vs_clean": {
+        "MSE": 246.65426948377498,
+        "PSNR": 24.209917235461496,
+        "SSIM": 0.9745954977040622
+      },
+      "gaussian_vs_clean": {
+        "MSE": 201.88620800500888,
+        "PSNR": 25.079737100367655,
+        "SSIM": 0.9792765382936529
+      }
+    }
+  },
+  {
+    "timestamp_iso": "2025-12-15T00-51-34",
+    "source_type": "upload",
+    "source_name": "1.png",
+    "kernel_size": 3,
+    "gaussian_sigma": 1.0,
+    "noise_mode": "none",
+    "noise_gaussian_sigma": 15.0,
+    "salt_pepper_prob": 0.02,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-15T00-51-34_resized_500x500.jpg",
+      "grayscale": "2025-12-15T00-51-34_grayscale.jpg",
+      "noisy": "2025-12-15T00-51-34_noisy.jpg",
+      "box": "2025-12-15T00-51-34_box_filtered.jpg",
+      "gaussian": "2025-12-15T00-51-34_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 0.0,
+        "PSNR": Infinity,
+        "SSIM": 1.0
+      },
+      "box_vs_clean": {
+        "MSE": 30.97882103703704,
+        "PSNR": 33.22015475102954,
+        "SSIM": 0.9870166525024937
+      },
+      "gaussian_vs_clean": {
+        "MSE": 21.858941603294557,
+        "PSNR": 34.73451231020776,
+        "SSIM": 0.9908871817773559
+      }
+    }
+  },
+  {
+    "timestamp_iso": "2025-12-14T19-34-49",
+    "source_type": "gallery",
+    "source_name": "Drink.JPG",
+    "kernel_size": 3,
+    "gaussian_sigma": 5.0,
+    "noise_mode": "none",
+    "noise_gaussian_sigma": 15.0,
+    "salt_pepper_prob": 0.02,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-14T19-34-49_resized_500x500.jpg",
+      "grayscale": "2025-12-14T19-34-49_grayscale.jpg",
+      "noisy": "2025-12-14T19-34-49_noisy.jpg",
+      "box": "2025-12-14T19-34-49_box_filtered.jpg",
+      "gaussian": "2025-12-14T19-34-49_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 0.0,
+        "PSNR": Infinity,
+        "SSIM": 1.0
+      },
+      "box_vs_clean": {
+        "MSE": 11.379588444444448,
+        "PSNR": 37.5695380527097,
+        "SSIM": 0.9941360304406099
+      },
+      "gaussian_vs_clean": {
+        "MSE": 11.251641249037728,
+        "PSNR": 37.61864484339475,
+        "SSIM": 0.9942025286708945
+      }
+    }
+  },
+  {
+    "timestamp_iso": "2025-12-14T19-31-54",
+    "source_type": "gallery",
+    "source_name": "Drink.JPG",
+    "kernel_size": 3,
+    "gaussian_sigma": 1.0,
+    "noise_mode": "none",
+    "noise_gaussian_sigma": 15.0,
+    "salt_pepper_prob": 0.02,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-14T19-31-54_resized_500x500.jpg",
+      "grayscale": "2025-12-14T19-31-54_grayscale.jpg",
+      "noisy": "2025-12-14T19-31-54_noisy.jpg",
+      "box": "2025-12-14T19-31-54_box_filtered.jpg",
+      "gaussian": "2025-12-14T19-31-54_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 0.0,
+        "PSNR": Infinity,
+        "SSIM": 1.0
+      },
+      "box_vs_clean": {
+        "MSE": 11.379588444444448,
+        "PSNR": 37.5695380527097,
+        "SSIM": 0.9941360304406099
+      },
+      "gaussian_vs_clean": {
+        "MSE": 8.146755004893457,
+        "PSNR": 39.020957047785416,
+        "SSIM": 0.995813436129911
+      }
+    }
+  },
+  {
+    "timestamp_iso": "2025-12-14T19-31-38",
+    "source_type": "gallery",
+    "source_name": "Car.jpg",
+    "kernel_size": 3,
+    "gaussian_sigma": 1.0,
+    "noise_mode": "none",
+    "noise_gaussian_sigma": 15.0,
+    "salt_pepper_prob": 0.02,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-14T19-31-38_resized_500x500.jpg",
+      "grayscale": "2025-12-14T19-31-38_grayscale.jpg",
+      "noisy": "2025-12-14T19-31-38_noisy.jpg",
+      "box": "2025-12-14T19-31-38_box_filtered.jpg",
+      "gaussian": "2025-12-14T19-31-38_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 0.0,
+        "PSNR": Infinity,
+        "SSIM": 1.0
+      },
+      "box_vs_clean": {
+        "MSE": 192.84422113580248,
+        "PSNR": 25.278737317515958,
+        "SSIM": 0.9802905541385296
+      },
+      "gaussian_vs_clean": {
+        "MSE": 141.38724456792164,
+        "PSNR": 26.626701300749225,
+        "SSIM": 0.985587953780423
+      }
+    }
+  },
+  {
+    "timestamp_iso": "2025-12-14T19-30-04",
+    "source_type": "gallery",
+    "source_name": "Car.jpg",
+    "kernel_size": 3,
+    "gaussian_sigma": 1.0,
+    "noise_mode": "none",
+    "noise_gaussian_sigma": 15.0,
+    "salt_pepper_prob": 0.02,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-14T19-30-04_resized_500x500.jpg",
+      "grayscale": "2025-12-14T19-30-04_grayscale.jpg",
+      "noisy": "2025-12-14T19-30-04_noisy.jpg",
+      "box": "2025-12-14T19-30-04_box_filtered.jpg",
+      "gaussian": "2025-12-14T19-30-04_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 0.0,
+        "PSNR": Infinity,
+        "SSIM": 1.0
+      },
+      "box_vs_clean": {
+        "MSE": 192.84422113580248,
+        "PSNR": 25.278737317515958,
+        "SSIM": 0.9802905541385296
+      },
+      "gaussian_vs_clean": {
+        "MSE": 141.38724456792164,
+        "PSNR": 26.626701300749225,
+        "SSIM": 0.985587953780423
+      }
+    }
+  },
+  {
+    "timestamp_iso": "2025-12-14T19-29-03",
+    "source_type": "gallery",
+    "source_name": "Car.jpg",
+    "kernel_size": 3,
+    "gaussian_sigma": 1.0,
+    "noise_mode": "none",
+    "noise_gaussian_sigma": 15.0,
+    "salt_pepper_prob": 0.02,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-14T19-29-03_resized_500x500.jpg",
+      "grayscale": "2025-12-14T19-29-03_grayscale.jpg",
+      "noisy": "2025-12-14T19-29-03_noisy.jpg",
+      "box": "2025-12-14T19-29-03_box_filtered.jpg",
+      "gaussian": "2025-12-14T19-29-03_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 0.0,
+        "PSNR": Infinity,
+        "SSIM": 1.0
+      },
+      "box_vs_clean": {
+        "MSE": 192.84422113580248,
+        "PSNR": 25.278737317515958,
+        "SSIM": 0.9802905541385296
+      },
+      "gaussian_vs_clean": {
+        "MSE": 141.38724456792164,
+        "PSNR": 26.626701300749225,
+        "SSIM": 0.985587953780423
+      }
+    }
+  },
+  {
+    "timestamp_iso": "2025-12-14T19-28-02",
+    "source_type": "gallery",
+    "source_name": "Drink.JPG",
+    "kernel_size": 3,
+    "gaussian_sigma": 1.0,
+    "noise_mode": "none",
+    "noise_gaussian_sigma": 15.0,
+    "salt_pepper_prob": 0.02,
+    "boundary_mode": "reflect",
+    "outputs": {
+      "resized": "2025-12-14T19-28-02_resized_500x500.jpg",
+      "grayscale": "2025-12-14T19-28-02_grayscale.jpg",
+      "noisy": "2025-12-14T19-28-02_noisy.jpg",
+      "box": "2025-12-14T19-28-02_box_filtered.jpg",
+      "gaussian": "2025-12-14T19-28-02_gaussian_filtered.jpg"
+    },
+    "metrics": {
+      "noisy_vs_clean": {
+        "MSE": 0.0,
+        "PSNR": Infinity,
+        "SSIM": 1.0
+      },
+      "box_vs_clean": {
+        "MSE": 11.379588444444448,
+        "PSNR": 37.5695380527097,
+        "SSIM": 0.9941360304406099
+      },
+      "gaussian_vs_clean": {
+        "MSE": 8.146755004893457,
+        "PSNR": 39.020957047785416,
+        "SSIM": 0.995813436129911
+      }
+    }
+  }
+]
